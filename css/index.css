@@ -325,3 +325,56 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.home .magazine-form {
+  padding: 20px;
+  border-top: 1px solid #dee2e6;
+}
+.home .magazine-form p {
+  margin: 10px 0;
+}
+.home .magazine-form form {
+  width: 70%;
+  margin: 0 auto;
+}
+.home .magazine-form form div {
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.home .magazine-form form div .empty-div {
+  width: 100%;
+}
+.home .magazine-form form span {
+  font-size: 1.6rem;
+  padding-right: 5px;
+}
+.home .magazine-form form input {
+  width: 100%;
+  border-radius: 5px;
+}
+.home .magazine-form form .btn {
+  width: 30%;
+  padding: 2%;
+  border-radius: 5px;
+  background: #22283A;
+  color: white;
+  border: 1px solid #22283A;
+  font-size: 1.8rem;
+  text-align: center;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .home .magazine-form form .btn {
+    width: 100%;
+    padding: 10px;
+  }
+}
+.home .magazine-form form .btn:hover {
+  background-color: white;
+  color: #22283A;
+}

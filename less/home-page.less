@@ -121,4 +121,56 @@
       }
     }
   }
+
+  .magazine-form {
+    padding: 20px;
+    border-top: 1px solid @main-border-color;
+
+    p {
+      margin: 10px 0;
+    }
+
+    form {
+      width: 70%;
+      margin: 0 auto;
+
+      div {
+        margin-bottom: 10px;
+        display: flex;
+        flex-wrap: nowrap;
+
+        .empty-div {
+          width: 100%;
+        }
+      }
+
+      span {
+        font-size: 1.6rem;
+        padding-right: 5px;
+      }
+
+      input {
+        width: 100%;
+        border-radius: 5px;
+      }
+
+      .btn {
+        .button(@btn-bg-color, white);
+        font-size: 1.6rem;
+        .center();
+        padding: 5px;
+        margin: 0 auto;
+
+        @media(@phone) {
+          width: 100%;
+          padding: 10px;
+        }
+
+        &:hover {
+          background-color: white;
+          color: @btn-bg-color;
+        }
+      }
+    }
+  }
 }// home

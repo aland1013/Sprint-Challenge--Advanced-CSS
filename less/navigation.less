@@ -1,1 +1,35 @@
 // Navigation code here
+.nav-box {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 0 auto;
+  background-color: @nav-bg;
+  opacity: 0.9;
+  .flex(center, center);
+  flex-direction: column;
+
+  h1 {
+    margin-top: 10px;
+  }
+
+  .nav-bar {
+    width: 45%;
+    margin: 0 auto;
+    .flex(space-evenly, center);
+
+    @media(@phone) {
+      width: 80%;
+    }
+
+    a {
+      width: 20%;
+      padding: 10px 0;
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: @main-font-color;
+      text-decoration: none;
+      .center();
+    }
+  }
+}

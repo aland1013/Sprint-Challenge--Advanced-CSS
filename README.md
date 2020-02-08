@@ -34,13 +34,27 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+An adaptive website has multiple layouts defined by CSS media queries, and uses static units so that the layout “jumps” from one layout to the next as the size of the browser window increases/decreases.
+
+A responsive website also has multiple layouts defined by CSS media queries, but instead of static units, it uses relative units so that the elements grow/shrink as the size of the browser window increases/decreases.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+A “mobile first” design is styled so that the base layout is defined for the smallest/mobile screen size, and the media queries use the min-width property to define the breakpoints.  Conversely, a “desktop first” design is styled with the base layout being the largest/desktop screen size, and the media queries use the max-width property to define each breakpoint.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+When the font-size property in the html tag is 100%, 1 rem is equal to 16px, which can make converting rems to pixels difficult.  Setting the font-size to 62.5% in the html tag makes rems much easier to use because 1 rem will equal 10px.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+A CSS preprocessor is a program that generates CSS from its own syntax that is easier to write, read and maintain than vanilla CSS because they also allow you to utilize things like variables, mixins, and nesting.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concept in preprocessing is nesting.  It is much easier for me to style webpages, because I can look at the html and my LESS file can almost mimic the structure exactly.  I also like how media queries work in LESS by “bubbling up.”  It is more intuitive to me to use them that way than the way the must be defined in vanilla CSS.
+
+The most difficult preprocessing concept for me right now is the use of parametric mixins, because the syntax can be confusing at times.  But I feel like I am picking it up fairly quickly.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
